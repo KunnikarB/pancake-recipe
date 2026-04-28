@@ -15,22 +15,27 @@
   
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   background-color: var(--color-bg);
   font-family: "Inter", sans-serif;
   color: var(--color-text);
-  font-size: 13px;
+  line-height: 2;
 }
 
 .page {
   display: flex;
   justify-content: center;
-  padding: 0px 60px;
+  padding: 0 60px;
   margin-bottom: 20px;
 }
 
 .card {
-  width: 800px;
+  width: min(800px, 100%);
   background: var(--color-card);
 }
 
@@ -65,10 +70,40 @@ h2 {
 
 .info {
   margin: 20px 0 20px;
+  font-size: 13px;
 }
 
 ul, ol {
   padding-left: 25px;
-  line-height: 2.2;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 18px;;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .page {
+    padding: 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    max-width: 100%;
+  }
 }
 
