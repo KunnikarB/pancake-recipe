@@ -92,6 +92,18 @@ ul, ol {
   object-fit: cover;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure figcaption {
+  margin-top: 5px;
+  font-size: 13px;
+  
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 14px;
