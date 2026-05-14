@@ -8,9 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Skip Link -->
+  <a href="#ingredienser" class="skip-link">Hoppa till innehåll</a>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Huvudnavigering">
+      <ul>    
+        <li><a href="#ingredienser"><i class="fa-solid fa-utensils"></i> Ingredienser</a></li>
+        <li><a href="#instruktion"><i class="fa-solid fa-list"></i> Instruktion</a></li>
+        <li><a href="#gallery-title"><i class="fa-solid fa-images"></i> Serveringsförslag</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main class="page">
     <article class="card">
       <!-- Header -->
@@ -24,7 +42,7 @@
       <div class="content">
         <!-- Ingredienser -->
         <section>
-          <h2>Ingredienser</h2>
+          <h2 id="ingredienser">Ingredienser</h2>
           <p class="info">För 4 portioner</p>
           <ul>
             <li>2 1/2 dl vetemjöl</li>
@@ -38,7 +56,7 @@
         
         <!-- Instruktion -->
         <section>
-          <h2>Så här gör du</h2>
+          <h2 id="instruktion">Så här gör du</h2>
           <ol>
             <li>Blanda mjöl och salt i en bunke</li>
             <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
@@ -52,7 +70,7 @@
 
         <!-- Gallery -->
          <section aria-labelledby="gallery-title">
-          <h2>Serveringsförslag</h2>
+          <h2 id="gallery-title">Serveringsförslag</h2>
 
           <div class="gallery" role="list">
 
