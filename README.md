@@ -1,4 +1,6 @@
-# 🥞 Pancake Recipe Page
+# 🥞 Swedish Pancake Recipe Website
+A responsive and accessible recipe website built with HTML5 and CSS3.
+The project features a traditional Swedish pancake recipe with modern UI design, semantic HTML structure, keyboard accessibility, responsive layout, and optimized images.
 
 ## Tech Stack
 - HTML5
