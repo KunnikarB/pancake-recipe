@@ -17,77 +17,156 @@
 <body>
 
   <!-- Skip Link -->
-  <a href="#ingredienser" class="skip-link">Hoppa till innehåll</a>
+  <a href="#ingredienser" class="skip-link">
+    Hoppa till innehåll
+  </a>
 
-  <header class="site-header">
-    <nav class="site-nav" aria-label="Huvudnavigering">
-      <ul>    
-        <li><a href="#ingredienser"><i class="fa-solid fa-utensils"></i> Ingredienser</a></li>
-        <li><a href="#instruktion"><i class="fa-solid fa-list"></i> Instruktion</a></li>
-        <li><a href="#gallery-title"><i class="fa-solid fa-images"></i> Serveringsförslag</a></li>
+  <!-- Header -->
+  <header class="header">
+
+    <nav class="nav" aria-label="Huvudnavigering">
+
+      <ul class="nav__list">
+
+        <li class="nav__item">
+          <a class="nav__link" href="#ingredienser">
+            <i class="fa-solid fa-utensils"></i>
+            Ingredienser
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="#instruktion">
+            <i class="fa-solid fa-list"></i>
+            Instruktion
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="#gallery-title">
+            <i class="fa-solid fa-images"></i>
+            Serveringsförslag
+          </a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
+  <!-- Main -->
   <main class="page">
-    <article class="card">
-      <!-- Header -->
-      <header>
-        <!-- Hero Image -->
-        <img class="hero-img" src="images/pancakes-main.avif" srcset="images/pancakes-small.avif 600w, images/pancakes-main.avif 1172w" sizes="(max-width: 768px) 100vw, 1172px" width="1172"  height="780"         alt="Traditionella svenska pannkakor med bär och grädde">
-        <h1>Enkelt recept på pannkakor</h1>
-        <p class="intro">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
+
+    <article class="recipe-card">
+
+      <!-- Recipe Header -->
+      <header class="recipe-card__header">
+
+        <img
+          class="recipe-card__image"
+          src="images/pancakes-main.avif"
+          alt="Traditionella svenska pannkakor med bär och grädde"
+        >
+
+        <h1 class="recipe-card__title">
+          Enkelt recept på pannkakor
+        </h1>
+
+        <p class="recipe-card__intro">
+          Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.
+        </p>
+
       </header>
 
-      <div class="content">
-        <!-- Ingredienser -->
-        <section>
-          <h2 id="ingredienser">Ingredienser</h2>
-          <p class="info">För 4 portioner</p>
-          <ul>
-            <li>2 1/2 dl vetemjöl</li>
-            <li>1/2 tsk salt</li>
-            <li>6 dl mjölk</li>
-            <li>3 ägg</li>
-            <li>smör (till stekning)</li>
-            <li>sylt,bär eller frukt till servering</li>
+      <!-- Content -->
+      <div class="recipe-card__content">
+
+        <!-- Ingredients -->
+        <section class="recipe-section">
+          <h2 class="recipe-section__title" id="ingredienser">
+            Ingredienser
+          </h2>
+          <p class="recipe-section__info">
+            För 4 portioner
+          </p>
+          <ul class="recipe-section__list">
+
+            <li class="recipe-section__item">2 1/2 dl vetemjöl</li>
+            <li class="recipe-section__item">1/2 tsk salt</li>
+            <li class="recipe-section__item">6 dl mjölk</li>
+            <li class="recipe-section__item">3 ägg</li>
+
           </ul>
         </section>
-        
-        <!-- Instruktion -->
-        <section>
-          <h2 id="instruktion">Så här gör du</h2>
-          <ol>
-            <li>Blanda mjöl och salt i en bunke</li>
-            <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-            <li>Vispa i resten av mjölken och äggen.</li>
-            <li>Låt smeten vila ca 10 minuter.</li>
-            <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna</li>
-            <li>Servera med sylt, bär eller frukt</li>
+
+        <!-- Instructions -->
+        <section class="recipe-section">
+          <h2 class="recipe-section__title" id="instruktion">
+           Så här gör du
+          </h2>
+          <ol class="recipe-section__list recipe-section__list--ordered">
+            <li class="recipe-section__item">
+            Blanda mjöl och salt i en bunke
+           </li>
+            <li class="recipe-section__item">
+            Vispa i hälften av mjölken och vispa till en slät smet.
+            </li>
+            <li class="recipe-section__item">
+              Vispa i resten av mjölken och äggen.
+            </li>
+            <li class="recipe-section__item">
+              Låt smeten vila ca 10 minuter.
+            </li>
+            <li class="recipe-section__item">
+              Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.
+            </li>
+            <li class="recipe-section__item">
+              Servera med sylt, bär eller frukt.
+            </li>
           </ol>
-          
         </section>
 
         <!-- Gallery -->
-         <section aria-labelledby="gallery-title">
-          <h2 id="gallery-title">Serveringsförslag</h2>
-
+        <section class="gallery-section" aria-labelledby="gallery-title">
+          <h2 class="gallery-section__title" id="gallery-title">
+            Serveringsförslag
+          </h2>
           <div class="gallery" role="list">
 
-            <figure class="gallery-item" role="listitem">
-              <img src="images/pancakes-small.main .avif" alt="Serveringsförslag: pannkakor med bär, sylt och grädde" loading="lazy">
-              <figcaption>Pannkakor med bär, sylt och grädde</figcaption>
+            <figure class="gallery__item" role="listitem">
+              <img
+                class="gallery__image"
+                src="./images/pancakes-small.main.avif"
+                alt="Serveringsförslag: pannkakor med bär, sylt och grädde"
+                loading="lazy"
+              >
+              <figcaption class="gallery__caption">
+                Pannkakor med bär, sylt och grädde
+              </figcaption>
             </figure>
 
-            <figure role="listitem" class="gallery-item">
-              <img src="images/pancakes2.avif" alt="Serveringsförslag: pannkakor med bär och choklad" loading="lazy">
-              <figcaption>Pannkakor med bär och choklad</figcaption>
+            <figure class="gallery__item" role="listitem">
+
+              <img
+                class="gallery__image"
+                src="images/pancakes2.avif"
+                alt="Pannkakor med bär och choklad"
+              >
+
+              <figcaption class="gallery__caption">
+                Pannkakor med bär och choklad
+              </figcaption>
+
             </figure>
-            
           </div>
-         </section>
+        </section>
+
       </div>
+
     </article>
+
   </main>
+
 </body>
 </html>
